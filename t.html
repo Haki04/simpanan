@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>loop</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: arial ;
+		}
+		body{
+			width: 100%;
+			height: 100vh;
+			display: flex ;
+			justify-content: center ;
+			padding-top: 10%;
+		}
+	</style>
+</head>
+<body>
+	
+	<h1></h1>
+	<script>
+		
+let jumlah = prompt("masukkan angka > 0")
+
+//h.style.color = 'blue'
+function hm(g){
+	
+  let a = parseInt(g)
+  if(a > 0){
+    let b = a
+    const data = '😄' 
+    let c = 1 
+    let h = '.'   
+    	let hl = document.querySelector("h1")
+    let k = setInterval(()=>{  
+   // h.style.color = 'red'
+    	hl.innerText = `ni buat kamu ${h}`
+      c++
+      h +='.'   
+      
+      if(c > 5){
+        clearInterval(k)
+        }
+    },500 )
+    
+    if(c >1){
+   alert(c)
+      let d = 1      
+      let l = setInterval((b)=>{
+     	//let hl = document.querySelector("h1")
+      hl.innerText = `${data} heheh`
+      d++
+        if(d >= 7){
+          clearInterval(l)
+        }
+       },1000 )
+      }
+  }
+}
+
+hm(jumlah)
+
+
+
+
+	</script>
+	
+</body>
+</html>
